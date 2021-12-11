@@ -1,0 +1,23 @@
+<view style="display: flex; flex-direction: column; border: 1vh solid #ff0000; height: {{height}};">
+    <view>
+        <text>onReachBottom测试</text>
+    </view>
+    <view style="display: flex;">
+        <radio-group bindchange="changeHeight">
+            <label class="radio">
+                <radio value="auto" checked="true"/>auto
+            </label>
+            <label class="radio">
+                <radio value="98vh"/>100vh
+            </label>
+            <label class="radio">
+                <radio value="99vh"/>101vh
+            </label>
+        </radio-group>
+    </view>
+    <view>
+      <text>
+        onReachBottom triggered {{bottomCnt}} time(s) at this height
+      </text>
+    </view>
+</view>
